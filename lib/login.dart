@@ -37,7 +37,7 @@ class _LoginState extends State<Login> {
               child: TextField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
-                  labelText: 'Enter your Roll number',
+                  labelText: 'Enter your name',
                 ),
               ),
             ),

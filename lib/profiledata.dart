@@ -26,20 +26,22 @@ class _PrflViewState extends State<PrflView> {
                 Icons.man_2_sharp,
                 size: 60,
               ),
-              backgroundColor: Colors.pink,
+              backgroundColor: Colors.white,
             ),
             SizedBox(
               height: 50,
             ),
             Text(
-              'Sinan T K',
-              style: TextStyle(fontSize: 24, color: Colors.red),
+              'keerthana vk',
+              style: TextStyle(fontSize: 30, color: Colors.white),
             ),
             SizedBox(
-              height: 50,
+              height: 10,
             ),
+            Text('FLUTTER DEVELOPER',style: TextStyle(fontSize: 10,color: Colors.white),),
+            SizedBox(height: 50,),
             Container(
-              width: 200,
+              width: 500,
               height: 50,
               color: Colors.white,
               child: Row(
@@ -52,7 +54,7 @@ class _PrflViewState extends State<PrflView> {
                     width: 50,
                   ),
                   Text(
-                    '6238890282',
+                    '9778369502',
                     style: TextStyle(fontSize: 18, color: Colors.pink),
                   )
                 ],
@@ -62,7 +64,7 @@ class _PrflViewState extends State<PrflView> {
               height: 50,
             ),
             Container(
-              width: 300,
+              width: 500,
               height: 50,
               color: Colors.white,
               child: Row(
@@ -75,7 +77,7 @@ class _PrflViewState extends State<PrflView> {
                     width: 50,
                   ),
                   Text(
-                    'sinantk56@gmail.com',
+                    'keerthanajp18@gmail.com',
                     style: TextStyle(color: Colors.pink, fontSize: 18),
                   ),
                 ],
