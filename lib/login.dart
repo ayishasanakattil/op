@@ -1,7 +1,10 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:qrapp/profiledata.dart';
 import 'package:qrapp/registration.dart';
 import 'package:qrapp/profile.dart';
+import 'package:http/http.dart' as http;
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -11,6 +14,21 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
+ TextEditingController rollNo=TextEditingController();
+ TextEditingController password=TextEditingController();
+    Future<void> login() async {
+
+      Uri url = Uri.parse('https://scanner-web-onrender.com/api/login');
+
+      var response=await http.post
+        (url,headers:<String,String>{
+          'content-Type': 'application/json;charset=UTF-8',
+      },
+      body:jsonEncode({'rollno':rollNo,'password':password})
+      );
+      var decodeData=jsonDecode(response.body);
+    }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,7 +55,7 @@ class _LoginState extends State<Login> {
               child: TextField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
-                  labelText: 'Enter your name',
+                  labelText: 'Enter your name+',
                 ),
               ),
             ),
