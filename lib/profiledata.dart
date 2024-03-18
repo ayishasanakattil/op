@@ -32,7 +32,7 @@ class _PrflViewState extends State<PrflView> {
               height: 50,
             ),
             Text(
-              'keerthana vk',
+              'Ayisha sana k',
               style: TextStyle(fontSize: 30, color: Colors.white),
             ),
             SizedBox(
@@ -54,7 +54,7 @@ class _PrflViewState extends State<PrflView> {
                     width: 50,
                   ),
                   Text(
-                    '9778369502',
+                    '123456789',
                     style: TextStyle(fontSize: 18, color: Colors.pink),
                   )
                 ],
@@ -77,7 +77,7 @@ class _PrflViewState extends State<PrflView> {
                     width: 50,
                   ),
                   Text(
-                    'keerthanajp18@gmail.com',
+                    'ayishasanak03@gmail.com',
                     style: TextStyle(color: Colors.pink, fontSize: 18),
                   ),
                 ],
