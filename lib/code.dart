@@ -26,14 +26,14 @@ class _QrState extends State<Qr> {
               ),
 
               SizedBox(height: 70,width: 50,),
-              QrImageView(
+              QrimageView(
                 data: '1234567890',
                 version: QrVersions.auto,
                 size: 200.0,
               ),
               SizedBox(height: 25,),
               ElevatedButton(onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context) => Imageview(),));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => imageview(),));
               },
                   child: Text('scan',style: TextStyle(color: Colors.white),),
                   style: ElevatedButton.styleFrom(
